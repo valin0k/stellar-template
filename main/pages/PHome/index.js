@@ -6,9 +6,10 @@ import {
   Header,
   Block,
   ImageSection,
-  IconSection
+  IconSection,
+  ColoredSection
 } from 'main/components'
-import { imageSection, iconSection } from 'main/data'
+import { imageSection, iconSection, coloredSection } from 'main/data'
 import './index.styl'
 // import { Content } from '@startupjs/ui'
 
@@ -29,6 +30,12 @@ export default observer(function PHome () {
             IconSection(
               items=iconSection
               title='Magna veroeros'
+            )
+          Block(withBorder)
+            ColoredSection(
+              items=coloredSection.items
+              title=coloredSection.title
+              text=coloredSection.text
             )
           
   `
