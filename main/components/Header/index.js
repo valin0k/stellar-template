@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { observer } from 'startupjs'
-import './index.styl'
 import { View } from 'react-native'
-import { Div, Span, Button, Br, Row, Card, H1 } from '@startupjs/ui'
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
+import { Span} from '@startupjs/ui'
 import { Svg } from 'components'
+import './index.styl'
 
-const BUTTON_STYLE = {
-  button: { borderColor: '#575d69' },
-  text: { color:  '#fff'},
-  redButton: { borderColor: '#e7746f', backgroundColor: '#e7746f' }
-}
 
 export default observer(function TopBar ({ style }) {
   return pug`

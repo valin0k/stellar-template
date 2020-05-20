@@ -3,5 +3,22 @@
     "image": "/phone.jpg",
     "title": "Ipsum sed adipiscing",
     "text": "Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam."
-  }
+  },
+  "iconSection": [
+    {
+      "icon": "",
+      "title": "Ipsum consequat",
+      "text": "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat."
+    },
+    {
+      "icon": "",
+      "title": "Amed sed feugiat",
+      "text": "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat."
+    },
+    {
+      "icon": "",
+      "title": "Dolor nullam",
+      "text": "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat."
+    }
+  ]
 }
