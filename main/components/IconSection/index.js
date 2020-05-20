@@ -13,7 +13,7 @@ export default observer(function IconSection ({ items, title }) {
         Divider
       View.content
         each item in items
-          View.section
+          View.section(key=item.title)
             View.iconBorderWrapper
               View.iconWrapper
                 Svg(uri=item.icon width=60 height=60)

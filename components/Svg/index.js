@@ -1,5 +1,5 @@
 import React from 'react'
-import SvgUri from 'react-native-svg-uri'
+import { Image } from 'react-native'
 import { observer } from 'startupjs'
 import sizes from './sizes'
 
@@ -12,7 +12,7 @@ export default observer(function Svg ({
 }) {
   const _size = sizes[size]
   return pug`
-    SvgUri(
+    Image(
       width=width || _size
       height=height || _size
       source={uri}
