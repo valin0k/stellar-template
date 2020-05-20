@@ -6,17 +6,17 @@
   },
   "iconSection": [
     {
-      "icon": "code.svg",
+      "icon": "/code.png",
       "title": "Ipsum consequat",
       "text": "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat."
     },
     {
-      "icon": "copy.svg",
+      "icon": "/copy.png",
       "title": "Amed sed feugiat",
       "text": "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat."
     },
     {
-      "icon": "diamond.svg",
+      "icon": "/diamond.png",
       "title": "Dolor nullam",
       "text": "Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat."
     }
