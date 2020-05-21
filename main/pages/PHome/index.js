@@ -8,9 +8,10 @@ import {
   ImageSection,
   IconSection,
   ColoredSection,
-  LastSection
+  LastSection,
+  Footer
 } from 'main/components'
-import { imageSection, iconSection, coloredSection, lastSection } from 'main/data'
+import { imageSection, iconSection, coloredSection, lastSection, footer } from 'main/data'
 import './index.styl'
 
 export default observer(function PHome () {
@@ -44,5 +45,6 @@ export default observer(function PHome () {
                 title=lastSection.title
                 text=lastSection.text
               )
+        Footer(icons=footer)
   `
 })

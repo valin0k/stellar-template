@@ -3,9 +3,9 @@ import { observer } from 'startupjs'
 import { Div, Span } from '@startupjs/ui'
 import './index.styl'
 
-export default observer(function LightButton ({ text = 'Learn more' }) {
+export default observer(function LightButton ({ text = 'Learn more', white }) {
   return pug`
-    Div.root
-      Span.text=text
+    Div.root(styleName={white})
+      Span.text(styleName={white})=text
   `
 })

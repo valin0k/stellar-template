@@ -64,5 +64,12 @@
   "lastSection": {
     "title": "Congue imperdiet",
     "text": "Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet."
-  }
+  },
+  "footer": [
+    "/twitter.png",
+    "/fb.png",
+    "/camera.png",
+    "/github.png",
+    "/ball.png"
+  ]
 }
