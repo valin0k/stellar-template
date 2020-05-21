@@ -3,16 +3,42 @@ _gray = #dddddd
 .root
   align-items center
 
+  +from($desktop)
+    flex-direction row
+
 .content
   align-items center
   margin 4u 0
+
+  +from($desktop)
+    order 0
+    align-items flex-start
+    max-width 60%
 
 .imageWrapper
   border-radius 13u
   padding gutter(s)
   border 1px solid _gray
+  width 100%
+  +from($desktop)
+    order 1
+    width 25u
+    align-items center
+
+.imageContainer
+  +from($desktop)
+    order 1
+    width 40%
+    align-items center
 
 .image
   width 24u
   height 24u
   border-radius 12u
+
+.textWrapper
+  text-align center
+
+  +from($desktop)
+    text-align left
+  margin-bottom 3u

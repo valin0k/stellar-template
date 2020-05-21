@@ -9,7 +9,8 @@ import {
   IconSection,
   ColoredSection,
   LastSection,
-  Footer
+  Footer,
+  Menu
 } from 'main/components'
 import { imageSection, iconSection, coloredSection, lastSection, footer } from 'main/data'
 import './index.styl'
@@ -22,6 +23,8 @@ export default observer(function PHome () {
         View.container
           Header
           View.content
+            View.menu
+              Menu
             Block(withBorder)
               ImageSection(
                 image=imageSection.image

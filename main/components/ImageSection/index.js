@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { observer } from 'startupjs'
 import { View, Image } from 'react-native'
 import { Divider, LightButton, Text } from 'components'
@@ -8,12 +8,15 @@ import './index.styl'
 export default observer(function ImageSection ({ image, title, text }) {
   return pug`
     View.root
-      View.imageWrapper
-        Image.image(source={uri: BASE_URL + image})
+      View.imageContainer
+        View.imageWrapper
+          Image.image(source={uri: BASE_URL + image})
       View.content
         Text(subtitle)=title
         Divider
-        Text(center)=text
-      LightButton
+        View.textWrapper
+          Text=text
+        View
+          LightButton
   `
 })
