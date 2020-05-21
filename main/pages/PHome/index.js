@@ -12,11 +12,10 @@ import {
 } from 'main/components'
 import { imageSection, iconSection, coloredSection, lastSection } from 'main/data'
 import './index.styl'
-// import { Content } from '@startupjs/ui'
 
 export default observer(function PHome () {
   return pug`
-    TopBar
+    // TopBar
     View.background
       ScrollView.root
         View.container

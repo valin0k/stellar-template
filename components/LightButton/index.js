@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { observer } from 'startupjs'
 import { Div, Span } from '@startupjs/ui'
 import './index.styl'
