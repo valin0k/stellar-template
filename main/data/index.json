@@ -27,6 +27,38 @@
     "items": [
       "Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar ",
       "faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia."
+    ],
+    "icons": [
+      {
+        "background": "#efa8b0",
+        "text": "Etiam",
+        "count": "5,120",
+        "icon": "/share.png"
+      },
+      {
+        "background": "#c79cc8",
+        "text": "Magna",
+        "count": "8,192",
+        "icon": "/folder.png"
+      },
+      {
+        "background": "#a89cc8",
+        "text": "Tempus",
+        "count": "2,048",
+        "icon": "/graph.png"
+      },
+      {
+        "background": "#9bb2e1",
+        "text": "Aliquam",
+        "count": "4,096",
+        "icon": "/pc.png"
+      },
+      {
+        "background": "#8cc9f0",
+        "text": "Nullam",
+        "count": "1,024",
+        "icon": "/diamondWhite.png"
+      }
     ]
   }
 }

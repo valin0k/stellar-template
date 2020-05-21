@@ -36,6 +36,7 @@ export default observer(function PHome () {
               items=coloredSection.items
               title=coloredSection.title
               text=coloredSection.text
+              icons=coloredSection.icons
             )
           
   `
