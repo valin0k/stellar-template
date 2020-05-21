@@ -10,9 +10,20 @@ _darkGray = #636363
 .content
   align-items center
 
+  +from($tablet)
+    flex-direction row
+    flex-wrap wrap
+    justify-content center
+    margin-top 4u
+
 .section
   align-items center
   margin-bottom gutter(l)
+
+
+  +from($tablet)
+    max-width 38u
+    margin-bottom 5u
 
 .iconBorderWrapper
   padding 1u

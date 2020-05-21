@@ -20,6 +20,7 @@ export default observer(function IconSection ({ items, title }) {
                 Image.image(source={uri: BASE_URL + item.icon} width=60 height=60)
             Span.itemTitle=item.title
             Text(center)=item.text
+      View.button
         LightButton
   `
 })
