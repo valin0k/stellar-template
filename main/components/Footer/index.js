@@ -12,7 +12,7 @@ export default observer(function Footer ({ icons }) {
       View.left
         Text(subtitle white) Aliquam sed mauris
         Text(white) Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
-        View
+        View.buttonWrapper
           LightButton(white)
       View.right
         View.rightTitle
@@ -33,5 +33,7 @@ export default observer(function Footer ({ icons }) {
         each icon in icons
           View.iconWrapper(key=icon)
             Image.icon(source={uri: BASE_URL + 'social' + icon})
+      View.credits
+        Text(white) © Untitled. Design: HTML5 UP. Demo Images: Unsplash.
   `
 })
