@@ -1,8 +1,19 @@
 .root
-  padding 5u
+  padding 7u
+
+.blocks
+  +from($desktop)
+    flex-direction row
 
 .left
   margin-bottom 5u
+
+  +from($desktop)
+    max-width 47%
+    margin-right 6%
+
+  +from($desktop)
+    max-width 47%
 
 .icons
   flex-direction row
@@ -33,7 +44,13 @@
 
 .buttonWrapper
   margin-top 4u
-  //flex-direction row
+
+  +from($tablet)
+    flex-direction row
 
 .credits
   margin-top 4u
+
+  +from($desktop)
+    align-items center
+    margin-top 6u
