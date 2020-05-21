@@ -11,7 +11,7 @@ export default observer(function TopBar ({ style }) {
         View.icon
           Image.image(width=85 height=85 source={uri: BASE_URL + '/logo.png'})
         View.title
-          Text(subtitle white) Stellar
+          Text(title white) Stellar
         Text(white center) Just another free, fully responsive site template built by @ajlkn for HTML5 UP.
   `
 })

@@ -3,9 +3,9 @@ import { observer } from 'startupjs'
 import { Span } from '@startupjs/ui'
 import './index.styl'
 
-export default observer(function Text ({ white, subtitle, text, center, children }) {
+export default observer(function Text ({ white, subtitle, text, center, title, children }) {
   return pug`
-    Span.text(styleName={white, subtitle, center})
+    Span.text(styleName={white, subtitle, center, title})
       =children
   `
 })

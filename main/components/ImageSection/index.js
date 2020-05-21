@@ -1,20 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import { observer } from 'startupjs'
 import { View, Image } from 'react-native'
-import { Divider, LightButton } from 'components'
-import { Span, Button } from '@startupjs/ui'
+import { Divider, LightButton, Text } from 'components'
 import { BASE_URL } from 'clientHelpers'
 import './index.styl'
 
 export default observer(function ImageSection ({ image, title, text }) {
   return pug`
-     View.root
+    View.root
       View.imageWrapper
         Image.image(source={uri: BASE_URL + image})
       View.content
-        Span.title=title
+        Text(subtitle)=title
         Divider
-        Span.text=text
-        LightButton
+        Text(center)=text
+      LightButton
   `
 })
