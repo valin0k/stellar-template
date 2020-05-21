@@ -2,7 +2,6 @@ import React from 'react'
 import { observer } from 'startupjs'
 import { ScrollView, View } from 'react-native'
 import {
-  TopBar,
   Header,
   Block,
   ImageSection,
@@ -17,7 +16,6 @@ import './index.styl'
 
 export default observer(function PHome () {
   return pug`
-    // TopBar
     View.background
       ScrollView.root
         View.container
