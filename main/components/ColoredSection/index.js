@@ -16,9 +16,7 @@ export default observer(function IconSection ({ items, title, text, icons }) {
       View.content
         View.sections
           each item, i in icons
-            - const first = !i
-            - const last = i + 1 === icons.length
-            View.section(key=item.title styleName={first, last})
+            View.section(key=item.icon styleName={first: !i, last: i + 1 === icons.length})
               View.iconBorderWrapper(style={backgroundColor: item.background})
                 View.iconWrapper
                   Image.image(source={uri: BASE_URL + item.icon})
