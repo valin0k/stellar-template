@@ -28,7 +28,7 @@ export default observer(function IconSection ({ items, title, text, icons }) {
         View.textItems
           each item, i in items
             - const first = !i
-            Text=item
+            Text(key=item)=item
             View.textDivider(styleName={first})
       View
         LightButton

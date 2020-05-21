@@ -11,7 +11,7 @@ export default observer(function IconSection ({ text, title }) {
      View.root
       Text(subtitle)=title
       Divider
-      Text(center).text=text
+      Text(center)=text
       View.buttons
         Div.blueButton
           Span.buttonText Get started
