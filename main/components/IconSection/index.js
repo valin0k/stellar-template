@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { observer } from 'startupjs'
 import { View, Image } from 'react-native'
 import { Divider, LightButton, Svg } from 'components'

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { observer } from 'startupjs'
 import { View, Image } from 'react-native'
 import { Divider, LightButton, Svg } from 'components'
@@ -25,6 +25,7 @@ export default observer(function IconSection ({ items, title, text, icons }) {
                   Span.iconText=item.text
         each item in items
           Span.itemText=item
+      View
         LightButton
   `
 })
