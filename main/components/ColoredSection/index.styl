@@ -10,10 +10,33 @@ _white = #ffffff
 .sections
   border-radius 1u
   overflow hidden
-  margin-bottom 2u
+  margin-bottom 4u
+  align-items center
+
+  +from($tablet)
+    flex-direction row
+    align-items stretch
 
 .section
-  align-items center
+  min-width 60%
+  width 60%
+  overflow hidden
+
+  &-first
+    border-radius 1u 1u 0 0
+
+  &-last
+    border-radius 0 0 1u 1u
+
+  +from($tablet)
+    width 20%
+    min-width 20%
+
+    &-first
+      border-radius 1u 0 0 1u
+
+    &-last
+      border-radius 0 1u 1u 0
 
 .content
   margin 4u 0
@@ -25,6 +48,8 @@ _white = #ffffff
 
 .iconWrapper
   padding 2u 0 1u 0
+  width 100%
+  align-items center
 
 .image
   width 7u
@@ -38,3 +63,13 @@ _white = #ffffff
 .iconContent
   align-items center
   margin-bottom 3u
+
+.textItems
+  +from($tablet)
+    flex-direction row
+
+.textDivider
+  +from($tablet)
+    &-first
+      padding 2u
+

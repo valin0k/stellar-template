@@ -15,16 +15,21 @@ export default observer(function IconSection ({ items, title, text, icons }) {
         Text(center)=text
       View.content
         View.sections
-          each item in icons
-            View.section(key=item.title)
+          each item, i in icons
+            - const first = !i
+            - const last = i + 1 === icons.length
+            View.section(key=item.title styleName={first, last})
               View.iconBorderWrapper(style={backgroundColor: item.background})
                 View.iconWrapper
                   Image.image(source={uri: BASE_URL + item.icon})
                 View.iconContent
                   Span.iconCount=item.count
                   Text(white)=item.text
-        each item in items
-          Text=item
+        View.textItems
+          each item, i in items
+            - const first = !i
+            Text=item
+            View.textDivider(styleName={first})
       View
         LightButton
   `
