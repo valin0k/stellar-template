@@ -46,6 +46,6 @@ export default observer(function PHome () {
                 title=lastSection.title
                 text=lastSection.text
               )
-        Footer(icons=footer)
+          Footer(icons=footer)
   `
 })
