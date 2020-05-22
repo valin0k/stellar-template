@@ -11,7 +11,8 @@ export default observer(function LastSection ({ text, title }) {
      View.root
       Text(subtitle)=title
       Divider
-      Text(center responsive)=text
+      View.textWrapper
+        Text(center responsive)=text
       View.buttons
         TouchableOpacity.blueButton
           Span.buttonText Get started

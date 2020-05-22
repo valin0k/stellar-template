@@ -8,7 +8,7 @@ import './index.styl'
 export default observer(function Menu () {
   return pug`
     View.root
-      View.menuItem
+      View.menuItem(styleName={selected: true})
         Text Introduction
       View.menuItem
         Text First section

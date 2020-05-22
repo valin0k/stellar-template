@@ -18,8 +18,8 @@ _white = #ffffff
     align-items stretch
 
 .section
-  min-width 80%
-  width 80%
+  width 100%
+  max-width 30u
   overflow hidden
 
   &-first
@@ -44,11 +44,10 @@ _white = #ffffff
 
 .iconBorderWrapper
   width 100%
-  padding 1u
+  padding 3u 0
   align-items center
 
 .iconWrapper
-  padding 2u 0 1u 0
   width 100%
   align-items center
 
@@ -63,14 +62,19 @@ _white = #ffffff
 
 .iconContent
   align-items center
-  margin-bottom 3u
+  margin 2u 0 0 0
 
 .textItems
   +tablet()
     flex-direction row
+
+.textItem
+  text-align justify
 
 .textDivider
   +tablet()
     &-first
       padding 2u
 
+.textWrapper
+  margin-top 2u

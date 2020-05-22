@@ -7,10 +7,10 @@ _whiteColor = #fff
 
 .root
   width 100%
+  padding 0 2u
 
 .container
   align-items center
-  margin 0 4u
   max-width 150u
   border-radius 2u
   overflow hidden
@@ -24,5 +24,6 @@ _whiteColor = #fff
   border-radius 1u
 
 .menu
-  +to($tablet)
-    display none
+  display none
+  +tablet()
+    display flex

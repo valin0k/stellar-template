@@ -12,7 +12,8 @@ export default observer(function ColoredSection ({ items, title, text, icons }) 
       View.titleWrapper
         Text(subtitle)=title
         Divider
-        Text(center responsive)=text
+        View.textWrapper
+          Text(center responsive)=text
       View.content
         View.sections
           each item, i in icons
@@ -26,7 +27,7 @@ export default observer(function ColoredSection ({ items, title, text, icons }) 
         View.textItems
           each item, i in items
             - const first = !i
-            Text(key=item)=item
+            Text(key=item justify)=item
             View.textDivider(styleName={first})
       View
         LightButton

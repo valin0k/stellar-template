@@ -19,7 +19,7 @@ export default observer(function Footer ({ icons }) {
         View.right
           View.rightTitle
             Text(subtitle white) Etiam feugiat
-          View.row
+          View.row(styleName={first: true})
             View.label
               Text(white bold) Address
             View.value
@@ -35,8 +35,8 @@ export default observer(function Footer ({ icons }) {
             View.value
               Text(white) information@untitled.tld
           View.icons
-            each icon in icons
-              View.iconWrapper(key=icon)
+            each icon, i in icons
+              View.iconWrapper(key=icon styleName={first: !i})
                 Image.icon(source={uri: BASE_URL + '/social' + icon})
       View.credits
         Text(white) © Untitled. Design: HTML5 UP. Demo Images: Unsplash.

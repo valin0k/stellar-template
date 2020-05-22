@@ -1,5 +1,5 @@
 .root
-  padding 7u
+  padding 7u 2u
 
 .blocks
   +desktop()
@@ -23,7 +23,10 @@
   padding 1u
   border 1px solid #ffffff59
   border-radius 4u
-  margin-right 2u
+  margin-left 2u
+
+  &-first
+    margin-left 0
 
 .rightTitle
   margin-bottom 2u
@@ -34,7 +37,10 @@
 
 .row
   flex-direction row
-  margin 1u 0
+  margin 2u 0 0 0
+
+  &-first
+    margin-top 0
 
 .label
   width 25%
@@ -45,7 +51,6 @@
 
 .buttonWrapper
   margin-top 4u
-  flex-direction row
 
 .credits
   margin-top 4u
