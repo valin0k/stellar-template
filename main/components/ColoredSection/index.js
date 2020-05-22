@@ -12,7 +12,7 @@ export default observer(function ColoredSection ({ items, title, text, icons }) 
       View.titleWrapper
         Text(subtitle)=title
         Divider
-        Text(center)=text
+        Text(center responsive)=text
       View.content
         View.sections
           each item, i in icons

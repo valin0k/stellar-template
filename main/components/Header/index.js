@@ -13,6 +13,6 @@ export default observer(function TopBar ({ style }) {
       View.title
         Text(title white) Stellar
       View.text
-        Text(white center) Just another free, fully responsive site template built by @ajlkn for HTML5 UP.
+        Text(white center responsive) Just another free, fully responsive site template built by @ajlkn for HTML5 UP.
   `
 })
