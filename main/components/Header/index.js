@@ -7,11 +7,12 @@ import './index.styl'
 
 export default observer(function TopBar ({ style }) {
   return pug`
-     View.root
-        View.icon
-          Image.image(width=85 height=85 source={uri: BASE_URL + '/logo.png'})
-        View.title
-          Text(title white) Stellar
+    View.root
+      View.icon
+        Image.image(width=85 height=85 source={uri: BASE_URL + '/logo.png'})
+      View.title
+        Text(title white) Stellar
+      View.text
         Text(white center) Just another free, fully responsive site template built by @ajlkn for HTML5 UP.
   `
 })
