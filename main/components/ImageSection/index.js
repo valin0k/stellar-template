@@ -16,7 +16,7 @@ export default observer(function ImageSection ({ image, title, text }) {
         Divider
         View.textWrapper
           Text=text
-        View
+        View.button
           LightButton
   `
 })

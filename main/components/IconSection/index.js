@@ -19,7 +19,8 @@ export default observer(function IconSection ({ items, title }) {
               View.iconWrapper
                 Image.image(source={uri: BASE_URL + item.icon} width=60 height=60)
             Span.itemTitle=item.title
-            Text(center)=item.text
+            View.itemText
+              Text(center)=item.text
       View.button
         LightButton
   `

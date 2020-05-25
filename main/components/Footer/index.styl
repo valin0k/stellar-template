@@ -6,14 +6,16 @@
     flex-direction row
 
 .left
-  margin-bottom 5u
-
   +desktop()
     max-width 47%
-    margin-right 6%
+
+.right
+  margin-top 5u
 
   +desktop()
-    max-width 47%
+    margin-left 6%
+    flex-grow 1
+    margin-top 0
 
 .icons
   flex-direction row
@@ -28,9 +30,6 @@
   &-first
     margin-left 0
 
-.rightTitle
-  margin-bottom 2u
-
 .icon
   width 3u
   height 3u
@@ -40,7 +39,7 @@
   margin 2u 0 0 0
 
   &-first
-    margin-top 0
+    margin-top 2u
 
 .label
   width 25%
