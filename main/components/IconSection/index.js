@@ -13,8 +13,8 @@ export default observer(function IconSection ({ items, title }) {
         Text(subtitle)=title
         Divider
       View.content
-        each item in items
-          View.section(key=item.title)
+        each item, i in items
+          View.section(key=item.title styleName={first: !i, last: i + 1 === items.length})
             View.iconBorderWrapper
               View.iconWrapper
                 Image.image(source={uri: BASE_URL + item.icon} width=60 height=60)

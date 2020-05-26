@@ -41,7 +41,7 @@ export default observer(function PHome () {
                 text=coloredSection.text
                 icons=coloredSection.icons
               )
-            Block
+            Block(noSidePadding)
               LastSection(
                 title=lastSection.title
                 text=lastSection.text

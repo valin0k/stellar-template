@@ -19,10 +19,23 @@ _darkGray = #636363
 
 .section
   align-items center
+  margin-top 3u
+
+  &-first
+    margin-top 0
 
   +tablet()
     max-width 38u
     margin 1u
+
+    &-first
+      margin 0 1u
+
+    &-last
+      margin 3u 1u 0 1u
+
+  +desktop()
+    margin-top 0
 
 .iconBorderWrapper
   padding 1u

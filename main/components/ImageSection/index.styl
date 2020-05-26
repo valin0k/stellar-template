@@ -17,12 +17,17 @@ _gray = #dddddd
 
 .imageWrapper
   border-radius 13u
-  padding gutter(s)
+  padding 0.5u
   border 1px solid _gray
   width 100%
+  justify-content center
+
+  +tablet()
+    border-radius 25u
   +desktop()
     order 1
-    width 25u
+    width 35u
+    height 35u
     align-items center
 
 .imageContainer
@@ -35,6 +40,11 @@ _gray = #dddddd
   width 24u
   height 24u
   border-radius 12u
+
+  +tablet()
+    width 32u
+    height 32u
+    border-radius 19u
 
 .textWrapper
   margin-top 2u
