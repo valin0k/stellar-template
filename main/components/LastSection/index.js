@@ -16,6 +16,7 @@ export default observer(function LastSection ({ text, title }) {
       View.buttons
         TouchableOpacity.blueButton
           Span.buttonText Get started
-        LightButton
+        View.lightButton
+          LightButton
   `
 })

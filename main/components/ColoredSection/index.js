@@ -6,7 +6,7 @@ import { Span } from '@startupjs/ui'
 import { BASE_URL } from 'clientHelpers'
 import './index.styl'
 
-export default observer(function ColoredSection ({ items, title, text, icons }) {
+export default observer(function ColoredSection ({ description, title, text, icons }) {
   return pug`
      View.root
       View.titleWrapper
@@ -25,11 +25,8 @@ export default observer(function ColoredSection ({ items, title, text, icons }) 
                   Span.iconCount=item.count
                   Text(white)=item.text
         View.textItems
-          each item, i in items
-            - const first = !i
-            Text(key=item justify)=item
-            View.textDivider(styleName={first})
-      View
+          Text(justify columns)=description
+      View.button
         LightButton
   `
 })

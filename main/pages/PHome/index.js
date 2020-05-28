@@ -36,7 +36,7 @@ export default observer(function PHome () {
               )
             Block(withBorder)
               ColoredSection(
-                items=coloredSection.items
+                description=coloredSection.description
                 title=coloredSection.title
                 text=coloredSection.text
                 icons=coloredSection.icons
