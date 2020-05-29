@@ -5,6 +5,7 @@ _gray = #dddddd
 
   +desktop()
     flex-direction row
+    justify-content space-between
 
 .content
   align-items center
@@ -19,7 +20,6 @@ _gray = #dddddd
   border-radius 13u
   padding 0.5u
   border 1px solid _gray
-  width 100%
   justify-content center
 
   +tablet()
@@ -29,22 +29,22 @@ _gray = #dddddd
     width 35u
     height 35u
     align-items center
-
-.imageContainer
-  +desktop()
-    order 1
-    width 40%
-    align-items center
+  +wide()
+    width 39u
+    height 39u
 
 .image
   width 24u
   height 24u
-  border-radius 12u
+  border-radius 20u
 
   +tablet()
     width 32u
     height 32u
-    border-radius 19u
+
+  +wide()
+    width 37u
+    height 37u
 
 .textWrapper
   margin-top 2u

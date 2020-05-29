@@ -8,9 +8,8 @@ import './index.styl'
 export default observer(function ImageSection ({ image, title, text }) {
   return pug`
     View.root
-      View.imageContainer
-        View.imageWrapper
-          Image.image(source={uri: BASE_URL + image})
+      View.imageWrapper
+        Image.image(source={uri: BASE_URL + image})
       View.content
         Text(subtitle)=title
         Divider
