@@ -17,43 +17,45 @@ _darkGray = #636363
     justify-content center
     margin-top 4u
 
+  +wide()
+    justify-content space-between
+    width 100%
+
 .section
   align-items center
   margin-top 3u
 
-  &-first
-    margin-top 0
-
   +tablet()
     max-width 38u
-    margin 1u
+    margin-left 5u
 
     &-first
-      margin 0 1u
+      margin-left 0
 
     &-last
-      margin 3u 1u 0 1u
+      margin-left 0
 
   +desktop()
-    margin-top 0
     max-width 32u
+    margin 0 0 0 3u
+    padding 0
+    justify-content space-between
+
+    &-first
+      margin-left 0
 
     &-last
-      margin 0 0 0 1u
-
-  +wide()
-    &-last
-      margin-top 0
+      margin-left 3u
 
 .iconBorderWrapper
   padding 1u
   border 1px solid _gray
-  border-radius 12u
+  border-radius 19u
 
 .iconWrapper
-  border-radius 12u
+  border-radius 19u
   border 1px solid _gray
-  padding 4u
+  padding 5u
 
 .itemTitle
   text-align center
