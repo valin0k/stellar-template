@@ -11,8 +11,7 @@ export default observer(function IconSection ({ items, title }) {
      View.root
       View.titleWrapper
         Text(subtitle)=title
-        View.dividerWrapper
-          Divider
+        Divider
       View.content
         each item, i in items
           View.section(key=item.title styleName={first: !i, last: i + 1 === items.length})

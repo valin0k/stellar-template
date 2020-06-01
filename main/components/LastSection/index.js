@@ -10,8 +10,7 @@ export default observer(function LastSection ({ text, title }) {
   return pug`
      View.root
       Text(subtitle)=title
-      View.dividerWrapper
-        Divider
+      Divider
       View.textWrapper
         Text(center responsive)=text
       View.buttons

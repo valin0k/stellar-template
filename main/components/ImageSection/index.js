@@ -12,8 +12,7 @@ export default observer(function ImageSection ({ image, title, text }) {
         Image.image(source={uri: BASE_URL + image})
       View.content
         Text(subtitle)=title
-        View.dividerWrapper
-          Divider
+        Divider
         View.textWrapper
           Text=text
         View.button

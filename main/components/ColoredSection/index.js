@@ -11,8 +11,7 @@ export default observer(function ColoredSection ({ description, title, text, ico
      View.root
       View.titleWrapper
         Text(subtitle)=title
-        View.dividerWrapper
-          Divider
+        Divider
         View.textWrapper
           Text(center responsive)=text
       View.content
