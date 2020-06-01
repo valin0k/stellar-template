@@ -1,6 +1,6 @@
 import React from 'react'
 import { observer } from 'startupjs'
-import { View, Image } from 'react-native'
+import { View, Image, TouchableOpacity } from 'react-native'
 import { BASE_URL } from 'clientHelpers'
 import { Text, LightButton } from 'components'
 import { Div, Span, Br } from '@startupjs/ui'
@@ -36,7 +36,7 @@ export default observer(function Footer ({ icons }) {
               Text(white) information@untitled.tld
           View.icons
             each icon, i in icons
-              View.iconWrapper(key=icon styleName={first: !i})
+              TouchableOpacity.iconWrapper(key=icon styleName={first: !i})
                 Image.icon(source={uri: BASE_URL + '/social' + icon})
       View.credits
         Text(white) © Untitled. Design: HTML5 UP. Demo Images: Unsplash.

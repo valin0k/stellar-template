@@ -28,12 +28,7 @@ _darkGray = #636363
   +tablet()
     max-width 38u
     margin-left 5u
-
-    &-first
-      margin-left 0
-
-    &-last
-      margin-left 0
+    margin-top 0
 
   +desktop()
     max-width 32u
@@ -41,11 +36,24 @@ _darkGray = #636363
     padding 0
     justify-content space-between
 
-    &-first
+  &-first
+    margin-left 0
+    margin-top 0
+
+    +tablet()
       margin-left 0
 
-    &-last
+    +desktop()
+      margin-left 0
+
+  &-last
+    +tablet()
+      margin-left 0
+      margin-top 5u
+
+    +desktop()
       margin-left 3u
+      margin-top 0
 
 .iconBorderWrapper
   padding 1u
@@ -75,5 +83,12 @@ _darkGray = #636363
     width 13u
     height 13u
 
+.dividerWrapper
+  +desktop()
+    margin-top 2u
+
 .button
   margin-top 3u
+
+  +desktop()
+    margin-top 4u
